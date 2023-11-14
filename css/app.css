@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.custom-scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../assets/fondo-drag-drop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+/******content*******/
+.overlay-drag-drop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 20px;
+}
+.modal-drag-drop{
+    width: 70rem;
+    margin: 0 auto;
+    height: 30rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 925px) {
+    .modal-drag-drop{
+        height: auto;
+    }
+}
+.info-drag-drop{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.title-drag-drop{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.description-drag-drop{
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.container-drag-drop{
+    padding: 4rem 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.drag-drop-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+@media screen and (max-width: 921px){
+    .drag-drop-grid{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+.drap-drop-list{
+    list-style: none;
+    width: 100%;
+}
+/*******drop img********/
+.suitcase-container .hover {
+    border: 2px dotted #000;
+    width: 100%;
+}
+.suitcase-dotted{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********drop elements********/
+.suitcase-infos{
+    width: 100%;
+    height: 15rem;
+}
+.suitcase-infos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+.suitcase-infos-container{
+    border: 2px dotted #000;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.list-title{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px;
+}
+.list-drag-drop{
+    display: flex;
+    border: 1px solid #000;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+}
+.list-drag-drop .icon-drag-drop{
+    max-width: 10%;
+}
+.list-description-drag-drop{
+    font-size: 12px;
+    margin: 0;
+}
+.list-drag-drop .product-drag-drop{
+    max-width: 25%;
+}
+
+/*****alerta***/
+.alert{
+    font-weight: bold;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="overlay-drag-drop">
+        <div class="modal-drag-drop">
+            <div class="container-drag-drop">
+
+                <div class="info-drag-drop">
+                    <h3 class="title-drag-drop">¿Cuántos elementos puede cargar tu maleta?</h3>
+                    <p class="description-drag-drop">Arrastra los productos que deseas agregar a la maleta</p>
+
+                    <div class="alert">
+                        <p class="alert-text">Puedes agregar productos a la maleta</p>
+                    </div>
+                </div>
+
+                <div class="drag-drop-grid">
+                    <div class="suitcase-container hover custom-scroll">
+                        <div class="suitcase-dotted">
+                            <div class="suitcase-img">
+                                <img src="https://kiplingco.vteximg.com.br/arquivos/ids/187355/Maleta-Peque%C3%B1a-Para-Mujer-Parker-S25.jpg?v=638280872201730000"
+                                    alt="Imagen maleta" id="suitcase-img">
+                            </div>
+                        </div>
+                    
+                        <div class="container-list-suitcases">
+                    
+                        </div>
+                    </div>
+                    <div class="suitcase-infos">
+                        <div class="suitcase-infos-container">
+
+                            <!--producto-->
+                            <div id="1" class="list-drag-drop" draggable="true" data-ancho="30" data-alto="2.5" data-profundidad="20" 
+                            data-peso="2" data-agregado="false">
+                                <p class="list-description-drag-drop">Computador portátil</p>
+                                <img src="https://d34vmoxq6ylzee.cloudfront.net/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/4/3/43K30LT-1_T1679066178.png" class="product-drag-drop" alt="producto portátil">
+                            </div>
+                            <!--producto-->
+
+                            <!--producto-->
+                            <div id="2" class="list-drag-drop" draggable="true" data-ancho="11" data-alto="18.5" data-profundidad="4" 
+                            data-peso="0.7" data-agregado="false">
+                                <p class="list-description-drag-drop">Cosmetiquera</p>
+                                <img src="https://kiplingco.vteximg.com.br/arquivos/ids/184282/Cosmetiquera-Para-Mujer-Creativity-L585.jpg?v=638028250357970000" class="product-drag-drop" alt="producto Cosmetiquera">
+                            </div>
+                            <!--producto-->
+
+                            <!--producto-->
+                            <div id="3" class="list-drag-drop" draggable="true" data-ancho="13" data-alto="20" data-profundidad="3" 
+                            data-peso="0.3" data-agregado="false">
+                                <p class="list-description-drag-drop">Libro</p>
+                                <img src="https://cdn.coordiutil.com/imagen-libro_me_siento_bien_pero_no_soy_feliz-2311142-0-0-0-100.jpg" class="product-drag-drop" alt="producto lonchera">
+                            </div>
+                            <!--producto-->
+
+                            <!--producto-->
+                            <div id="4" class="list-drag-drop" draggable="true" data-ancho="12" data-alto="10" data-profundidad="4" 
+                            data-peso="0.3" data-agregado="false">
+                                <p class="list-description-drag-drop">Cámara</p>
+                                <img src="https://cdn-4.nikon-cdn.com/e/Q5NM96RZZo-YRYNeYvAi9beHK4x3L-8u4h56I3YwHLAQ4G0XzTY4Dg==/Views/353_1590_D3500_left.png" class="product-drag-drop" alt="producto lonchera">
+                            </div>
+                            <!--producto-->
+
+                            <!--producto-->
+                            <div id="5" class="list-drag-drop" draggable="true" data-ancho="12" data-alto="14" data-profundidad="9" 
+                            data-peso="1.5" data-agregado="false">
+                                <p class="list-description-drag-drop">Tennis</p>
+                                <img src="https://e7.pngegg.com/pngimages/55/982/png-clipart-sports-shoes-topo-athletic-ultrafly-running-shoe-women-s-footwear-topo-athletic-ultrafly-running-shoe-men-s-brooks-tennis-shoes-for-women.png" class="product-drag-drop" alt="producto lonchera">
+                            </div>
+                            <!--producto-->
+
+                            <!--producto-->
+                            <div id="6" class="list-drag-drop" draggable="true" data-ancho="15" data-alto="5.5" data-profundidad="6" 
+                            data-peso="0.2" data-agregado="false">
+                                <p class="list-description-drag-drop">Gafas de sol</p>
+                                <img src="https://www.latiendadegafas.com/wp-content/uploads/2023/09/Gafas-de-sol-Ray-Ban-Reverse-RBR0101S-92023A.png" class="product-drag-drop" alt="producto lonchera">
+                            </div>
+                            <!--producto-->
+
+                            <!--producto-->
+                            <div id="7" class="list-drag-drop" draggable="true" data-ancho="10" data-alto="3" data-profundidad="5" 
+                            data-peso="0.4" data-agregado="false">
+                                <p class="list-description-drag-drop">Sandalias</p>
+                                <img src="https://i.blogs.es/b3d93d/sandalias-brasileras-de-mujer-de-color-beige-con-suela-de-goma-antideslizante-1/450_1000.jpeg" class="product-drag-drop" alt="producto lonchera">
+                            </div>
+                            <!--producto-->
+
+                            <!--producto-->
+                            <div id="8" class="list-drag-drop" draggable="true" data-ancho="20" data-alto="25" data-profundidad="5" 
+                            data-peso="0.3" data-agregado="false">
+                                <p class="list-description-drag-drop">Camisetas x 3</p>
+                                <img src="https://unbrokensports.co/cdn/shop/products/NEGRA.png?v=1599803490&width=533" class="product-drag-drop" alt="producto lonchera">
+                            </div>
+                            <!--producto-->
+
+                            <!--producto-->
+                            <div id="9" class="list-drag-drop" draggable="true" data-ancho="25" data-alto="20" data-profundidad="10" 
+                            data-peso="0.2" data-agregado="false">
+                                <p class="list-description-drag-drop">Pantalonetas x 4</p>
+                                <img src="https://cdnx.jumpseller.com/hardcoresilver-hcs/image/28681424/resize/255/255?1666708748" class="product-drag-drop" alt="producto lonchera">
+                            </div>
+                            <!--producto-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
