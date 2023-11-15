@@ -15,6 +15,8 @@ console.log("Peso maleta", volumenMaleta);
 let espacioOcupado = 0;
 let pesoOcupado = 0;
 
+let productos = 0;
+
 
 contenedorLista.addEventListener("dragstart", (e) => {
     const elementoArrastrado = e.target;
@@ -94,6 +96,9 @@ contenedorMaleta.addEventListener("drop", (e) => {
 
     const id = e.dataTransfer.getData("id");
     contenedorMaleta.appendChild(document.getElementById(id));
+
+    productos ++;
+    alertaProductos(productos);
 });
 
 //devolver productos
@@ -126,8 +131,25 @@ contenedorMaleta.addEventListener("click", (e) => {
 
         contenedorLista.appendChild(productoSeleccionado);
     };
+
+    productos --
 });
 
+
+
+function alertaProductos(productos) {
+    const contenedorAlerta = document.querySelector(".container-list-suitcases");
+
+    if(productos) {
+        const alerta = document.createElement("P");
+        alerta.textContent = "Puedes sacar productos de la maleta con un click";
+        contenedorAlerta.appendChild(alerta);
+
+        if(contenedorAlerta.firstChild) {
+            contenedorAlerta.removeChild(contenedorAlerta.firstChild)
+        }
+    }
+}
 
 /*
 let items = document.querySelectorAll(".list-drag-drop");
